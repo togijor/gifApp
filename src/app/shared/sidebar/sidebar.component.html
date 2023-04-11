@@ -1,0 +1,16 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h3 class="text-light">
+    GIFs-APP
+  </h3>
+  <hr class="text-white"/>
+  <div class="list-group list-reset">
+    <!-- con el ngfor se genera una lista de todos lo buscado por el usuario
+    el metodo buscar() toma el item mostrado y se llama en el componente
+    -->
+    <a href="#" *ngFor="let item of historial"
+    el metodo buscar se llama en el componente
+    (click)="buscar(item)"
+    class="list-group-item list-group-action">
+        {{item | titlecase  }}
+    </a>
+  </div>
